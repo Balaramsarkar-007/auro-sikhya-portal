@@ -1,6 +1,21 @@
 import Layout from "@/components/layout/Layout";
 import Breadcrumb from "@/components/layout/Breadcrumb";
-import { Target, CheckCircle } from "lucide-react";
+import { Target, Quote } from "lucide-react";
+
+const quotes = [
+  {
+    text: "We are not here to repeat what others have done, but to prepare ourselves for the blossoming of a new consciousness and a new life.",
+    author: "The Mother",
+  },
+  {
+    text: "The aim of education is not to prepare a man to succeed in life and society, but to increase his perfectibility to its utmost.",
+    author: "The Mother",
+  },
+  {
+    text: "The new aim is to help the child to develop his intellectual, aesthetic, emotional, moral, spiritual being and his communal life and impulses out of his own temperament and capacities – a very different object from that of the old education which was simply to pack so much stereotyped knowledge into his resisting brain and impose a stereotyped rule of conduct on his struggling and dominated impulses.",
+    author: "Sri Aurobindo",
+  },
+];
 
 const AimsObjectives = () => (
   <Layout>
@@ -8,25 +23,26 @@ const AimsObjectives = () => (
       <Breadcrumb items={[{ label: "About Us", path: "/about/vision-mission" }, { label: "Aims & Objectives" }]} />
       <h1 className="page-title">Aims & Objectives</h1>
 
+      {/* Intro card */}
       <div className="content-card mb-8">
-        <Target size={36} className="text-primary mb-4" />
-        <p className="text-muted-foreground mb-4">Sri Aurobindo Purnanga Sikhya Kendra is committed to providing an education that goes beyond the conventional boundaries of learning. Our aims and objectives are rooted in the integral philosophy of Sri Aurobindo, seeking to develop every aspect of the child's being.</p>
+        <div className="flex items-start gap-4">
+          <Target size={40} className="text-primary shrink-0 mt-1" />
+          <div className="space-y-3 text-muted-foreground">
+            <p>The aim of the Institute is the humble implementation of the ideals of Integral Education as enunciated by Sri Aurobindo and The Mother in order to prepare the children for a higher and better life — to help them become the men of a new race.</p>
+            <p><span className="font-semibold text-foreground">Total perfection is the ultimate aim.</span> What we set before us as our ideal is the Divine Life upon earth.</p>
+            <p>In the real sense, ours is an attempt at evolving newer ways of learning and thinking — an attempt towards going beyond the structural schooling into the joyful freedom of inner growth, the growth that would flow from within to without.</p>
+          </div>
+        </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {[
-          "To develop the physical capacities of children through structured physical education, yoga, and outdoor activities.",
-          "To nurture emotional intelligence, resilience, and positive life skills through vital education.",
-          "To cultivate intellectual curiosity, critical thinking, and a love for knowledge through progressive mental education.",
-          "To awaken the inner being and develop an intuitive understanding of truth, beauty, and goodness.",
-          "To instill a sense of service, compassion, and responsibility towards the community and environment.",
-          "To integrate Indian cultural values with modern educational practices for a balanced curriculum.",
-          "To maintain a joyful, fear-free, and supportive learning environment for all students.",
-          "To prepare students not just for examinations but for life, with skills for self-reliance and leadership.",
-        ].map((aim, i) => (
-          <div key={i} className="content-card flex items-start gap-3">
-            <CheckCircle size={20} className="text-primary shrink-0 mt-0.5" />
-            <p className="text-muted-foreground text-sm">{aim}</p>
+      {/* Inspirational quotes */}
+      <h2 className="font-display text-xl font-semibold mb-5 text-foreground">In the Words of the Masters</h2>
+      <div className="space-y-5 mb-10">
+        {quotes.map((q, i) => (
+          <div key={i} className="content-card border-l-4 border-primary pl-5">
+            <Quote size={22} className="text-primary/30 mb-2" />
+            <p className="text-muted-foreground italic mb-3">"{q.text}"</p>
+            <p className="text-sm font-semibold text-primary">— {q.author}</p>
           </div>
         ))}
       </div>

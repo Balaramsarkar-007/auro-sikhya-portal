@@ -1,6 +1,5 @@
 import Layout from "@/components/layout/Layout";
 import Breadcrumb from "@/components/layout/Breadcrumb";
-import { Clock } from "lucide-react";
 
 const History = () => (
   <Layout>
@@ -10,18 +9,41 @@ const History = () => (
 
       <div className="space-y-6">
         {[
-          { year: "1978", title: "The Seed is Planted", desc: "A group of devotees of Sri Aurobindo, led by the founding members of Sri Aurobindo Sadhana Mandir, conceived the idea of starting a school based on integral education in the tribal heartland of Mayurbhanj." },
-          { year: "1982", title: "Foundation of the School", desc: "Sri Aurobindo Purnanga Sikhya Kendra was formally established with a handful of students and a few dedicated teachers. Classes began under simple conditions with a focus on holistic learning." },
-          { year: "1990", title: "Expansion and Growth", desc: "The school expanded to include classes up to Class VIII. New classrooms, a library, and a playground were added. The student strength grew to over 150." },
-          { year: "2000", title: "Recognition and Affiliation", desc: "The school received recognition from the state government and began following a structured curriculum while maintaining its integral education approach." },
-          { year: "2010", title: "Modern Facilities", desc: "A new science laboratory, computer room, and hostel facilities were inaugurated. The school became a residential institution catering to students from across the district." },
-          { year: "2020", title: "Digital Era", desc: "Despite the challenges of the pandemic, the school adapted with digital learning tools and continued its mission of integral education. Online classes and digital resources were introduced." },
-          { year: "Present", title: "A Thriving Community", desc: "Today, the school serves over 300 students with a team of 30+ dedicated educators. It stands as a model of integral education in Odisha, blending tradition with modern pedagogy." },
+          {
+            year: "1977",
+            title: "Foundation",
+            desc: "Sri Aurobindo Purnanga Sikhya Kendra, Ganailo was established on 16th September, 1977 with the noble aspiration of spreading the ideals of Integral Education as envisioned by Sri Aurobindo and The Mother.",
+          },
+          {
+            year: "Early Days",
+            title: "Humble Beginnings",
+            desc: "Founded as a humble yet sincere effort, the school began with modest resources and a small number of students, creating an atmosphere of discipline, harmony, simplicity, and joyful learning.",
+          },
+          {
+            year: "Growth",
+            title: "Steady Expansion",
+            desc: "Guided by the blessings of Sri Aurobindo and The Mother, the institution gradually developed into a respected centre of learning in the region — expanding its facilities and strengthening its academic standards through the dedication of teachers, students, parents, and the wider community.",
+          },
+          {
+            year: "Values",
+            title: "Beyond the Classroom",
+            desc: "Alongside academics, emphasis has always been placed on character building, self-discipline, physical fitness, cultural refinement, and service to society — nurturing the physical, vital, mental, psychic, and spiritual growth of every child.",
+          },
+          {
+            year: "Legacy",
+            title: "Generations Shaped",
+            desc: "The school has played an important role in shaping generations of students into responsible, confident, and compassionate individuals. Many former students have carried forward the values learned here, becoming worthy citizens and contributors to society.",
+          },
+          {
+            year: "Today",
+            title: "A Living Symbol",
+            desc: "Sri Aurobindo Purnanga Sikhya Kendra, Ganailo stands as a living symbol of Integral Education — combining tradition with progress, knowledge with wisdom, and outer success with inner growth. With gratitude to its pioneers, the school continues its journey towards excellence and a brighter future for coming generations.",
+          },
         ].map((item, i) => (
           <div key={i} className="content-card flex gap-4">
             <div className="shrink-0">
               <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center">
-                <span className="font-display font-bold text-sm text-accent">{item.year}</span>
+                <span className="font-display font-bold text-xs text-accent text-center leading-tight px-1">{item.year}</span>
               </div>
             </div>
             <div>

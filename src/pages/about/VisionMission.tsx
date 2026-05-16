@@ -12,18 +12,18 @@ const VisionMission = () => (
         <div className="content-card">
           <Eye size={36} className="text-primary mb-4" />
           <h2 className="section-title">Our Vision</h2>
-          <p className="text-muted-foreground mb-3">To create a centre of integral education where every child is nurtured in all dimensions of their being — physical, vital, mental, psychic, and spiritual — in accordance with the educational philosophy of Sri Aurobindo and The Mother.</p>
-          <p className="text-muted-foreground">We envision a community of learners who are not merely academically proficient, but are conscious, compassionate, and self-aware individuals ready to contribute positively to society and the world.</p>
+          <p className="text-muted-foreground mb-3">To be a luminous centre of Integral Education, inspired by the ideals of Sri Aurobindo and The Mother, where each child is helped to unfold the divinity within and develop into a conscious, capable, and compassionate individual.</p>
+          <p className="text-muted-foreground">We aspire to nurture future citizens who, through knowledge, character, and inner awakening, become instruments of harmony and positive transformation in society and the world.</p>
         </div>
         <div className="content-card">
           <Target size={36} className="text-accent mb-4" />
           <h2 className="section-title">Our Mission</h2>
           <ul className="space-y-3 text-muted-foreground">
-            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" /> To provide an educational environment that fosters the growth of the whole child — body, life, mind, and soul.</li>
-            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" /> To develop the inner faculties of each student and guide them towards self-discovery and self-mastery.</li>
-            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" /> To integrate academic learning with physical culture, creative expression, and ethical development.</li>
-            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" /> To instill values of truth, beauty, goodness, and service in every student.</li>
-            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" /> To create a joyful, nurturing atmosphere where learning is a natural and spontaneous process.</li>
+            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" />Create a joyful, disciplined, and nurturing environment for the holistic growth of every child.</li>
+            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" />Support balanced development in the physical, mental, emotional, and spiritual dimensions of life.</li>
+            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" />Inspire curiosity, creativity, self-discipline, courage, sincerity, and a spirit of service among students.</li>
+            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" />Combine academic excellence with character building, cultural values, and personal growth.</li>
+            <li className="flex items-start gap-2"><Heart size={16} className="text-primary mt-1 shrink-0" />Prepare students to face life with wisdom, confidence, strength, and dedication toward a higher purpose.</li>
           </ul>
         </div>
       </div>

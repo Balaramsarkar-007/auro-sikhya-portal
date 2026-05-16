@@ -14,19 +14,19 @@ const PrincipalMessage = () => (
             <div className="w-32 h-32 rounded-lg bg-secondary flex items-center justify-center mx-auto">
               <Users size={48} className="text-accent" />
             </div>
-            <h3 className="font-display font-semibold mt-3">Dr. Ananda Mohan Das</h3>
+            <h3 className="font-display font-semibold mt-3">Nirupama Chaini</h3>
             <p className="text-sm text-muted-foreground">Principal</p>
           </div>
           <div>
             <Quote size={32} className="text-primary/30 mb-2" />
             <div className="space-y-4 text-muted-foreground">
-              <p>Dear Parents, Students, and Well-wishers,</p>
-              <p>It gives me immense joy to welcome you to Sri Aurobindo Purnanga Sikhya Kendra, a school that stands not just for academic excellence, but for the integral development of the human being.</p>
-              <p>At our school, we believe that every child is unique and carries within them a divine potential waiting to be unfolded. Our approach to education is inspired by the vision of Sri Aurobindo and The Mother, who envisioned an education that addresses all parts of the being — the body, the life-force, the mind, and the innermost soul.</p>
-              <p>We do not merely teach subjects; we cultivate curiosity, creativity, compassion, and character. Our students learn not just from textbooks but from nature, from physical activities, from art and music, from meditation and silence, and most importantly, from the example set by their teachers and elders.</p>
-              <p>Our dedicated team of educators works tirelessly to create an atmosphere of love, discipline, and aspiration. We maintain small class sizes to ensure that each child receives individual attention and care.</p>
-              <p>I invite you to visit our campus, meet our teachers, interact with our students, and experience the unique spirit of our school. Together, let us nurture the leaders, thinkers, and compassionate individuals of tomorrow.</p>
-              <p className="font-semibold text-foreground">With warm regards and blessings,<br />Dr. Ananda Mohan Das</p>
+              <p>Dedicated to the noble cause of Integral Education as envisioned by Sri Aurobindo and The Mother, our school stands as an experimental centre striving, with humility and sincerity, to prepare the children, the budding souls for the blossoming of a new consciousness and a new life.</p>
+              <p>Our endeavour is to awaken the hidden potentials within each child and help them grow towards their highest perfection by creating a harmonious and inspiring atmosphere of learning. We seek the holistic development of every student — Physical, Vital, Mental, Psychic, and Spiritual — so that they may become balanced individuals and conscious instruments of the future.</p>
+              <p>Though our resources may be modest, our aspiration is great. With steadfast faith and collective effort, we continue to move forward toward this luminous and glorious goal.</p>
+              <p>I earnestly appeal for the cooperation and collaboration of all — present and former students, teachers, parents, Managing Committee members and well-wishers of the school — for the fulfillment of this grand mission. Let us come together in unity, goodwill, and dedication to ensure the integral progress of our institution on the path of perfection.</p>
+              <p>Let us also remember with deep gratitude that at the inception of the school in 1974, The Mother and Sri Aurobindo have guided and blessed this institution, showering their infinite Grace upon us. Whoever has entered this sacred atmosphere must have surely felt the Divine Presence vibrating in every corner of the campus.</p>
+              <p>May we prove worthy of manifesting this mighty mission in our lives and actions. May these luminous words of the Mother forever inspire us, guide us, and propel us toward ever higher achievements.</p>
+              <p className="font-semibold text-foreground">With warm regards and blessings,<br />Nirupama Chaini<br /><span className="font-normal text-muted-foreground">Principal</span></p>
             </div>
           </div>
         </div>

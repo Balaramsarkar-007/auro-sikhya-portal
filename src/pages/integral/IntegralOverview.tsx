@@ -9,9 +9,21 @@ const IntegralOverview = () => (
       <Breadcrumb items={[{ label: "Integral Education", path: "/integral-education/overview" }, { label: "Overview" }]} />
       <h1 className="page-title">Integral Education</h1>
 
-      <div className="content-card mb-8">
-        <p className="text-muted-foreground mb-3">Integral Education, as envisioned by Sri Aurobindo and The Mother, is a comprehensive approach to the development of the human being. It addresses five principal aspects of the personality: Physical, Vital, Mental, Psychic, and Spiritual.</p>
-        <p className="text-muted-foreground">Unlike conventional education that focuses primarily on intellectual development, integral education recognizes that a human being is a complex entity with multiple dimensions, each of which needs to be nurtured and developed harmoniously.</p>
+      {/* Intro card */}
+      <div className="content-card mb-6">
+        <p className="text-muted-foreground mb-3">The holistic approach to education followed here is known as Integral Education. It is essentially a preparatory and collective work — by the organizers, teachers, students and their parents — with a view to the all-round development of human individuals for the next evolutionary leap beyond man.</p>
+      </div>
+
+      {/* Quotes */}
+      <div className="space-y-5 mb-10">
+        <div className="content-card border-l-4 border-primary pl-5">
+          <p className="text-muted-foreground italic mb-3">"Education to be complete must have five principal aspects corresponding to the five principal activities of the human being: the physical, the vital, the mental, the psychic and the spiritual. Usually, these phases of education succeed each other in a chronological order following the growth of the individual. This, however, does not mean that the one should replace the other but that all must continue, completing one another, till the end of his life."</p>
+          <p className="text-sm font-semibold text-primary">— The Mother</p>
+        </div>
+        <div className="content-card border-l-4 border-primary pl-5">
+          <p className="text-muted-foreground italic mb-3">"…The truth we seek is made up of four major aspects: Love, Knowledge, Power and Beauty. These four attributes of the Truth will express themselves spontaneously in our being. The psychic will be the vehicle of true and pure love, the mind will be the vehicle of infallible knowledge, the vital will manifest an invincible power and strength and the body will be the expression of perfect beauty and perfect harmony."</p>
+          <p className="text-sm font-semibold text-primary">— The Mother</p>
+        </div>
       </div>
 
       <h2 className="section-title text-center mb-8">The Five Aspects of Education</h2>

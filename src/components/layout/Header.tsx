@@ -39,20 +39,20 @@ const Header = () => {
       )}
 
       {/* Main header */}
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link to="/" className="flex items-center gap-3">
+      <div className="max-w-screen-2xl mx-auto px-3 flex items-center gap-3 h-16">
+        <Link to="/" className="flex items-center gap-2 shrink-0">
           <div className="w-10 h-10 rounded-full saffron-gradient flex items-center justify-center text-primary-foreground font-display font-bold text-lg">ॐ</div>
           <div className="hidden sm:block">
-            <div className="font-display font-bold text-sm sm:text-base leading-tight text-foreground">Sri Aurobindo Purnanga</div>
-            <div className="font-display text-xs sm:text-sm text-primary leading-tight">Sikhya Kendra</div>
+            <div className="font-display font-bold text-sm sm:text-base leading-tight text-foreground whitespace-nowrap">Sri Aurobindo Purnanga</div>
+            <div className="font-display text-xs sm:text-sm text-primary leading-tight whitespace-nowrap">Sikhya Kendra</div>
           </div>
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lg:flex items-center gap-0.5">
+        <nav className="hidden lg:flex items-center gap-0.5 ml-auto">
           {navigation.map((item) => (
             <div key={item.path} className="relative group">
-              <Link to={item.children ? item.children[0].path : item.path} className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors rounded-md hover:bg-muted">
+              <Link to={item.children ? item.children[0].path : item.path} className="flex items-center gap-1 px-2 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors rounded-md hover:bg-muted whitespace-nowrap">
                 {item.title}
                 {item.children && <ChevronDown size={14} />}
               </Link>
